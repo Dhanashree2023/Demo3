@@ -1,0 +1,81 @@
+*✅Interview Question in SQL(All Syllabus)*
+1) What are different types of SQL Commands --  DDL:Create,Drop, ALter, Truncate DML - Insert, Update, Delete, TCL - Commit, Rollback, DQL - Select
+
+2) Write DDL and DML query in notepad. Assume Emp table
+Create table emp(ID int, Name varchar(255));
+Insert into emp values(1,'aa'),(2,'bb');
+Alter table emp add city varchar(255);
+update emp set name = 'rahul' where ID = 1; 
+Delete from emp where id = 2;
+select *from emp;
+truncate table emp;
+drop table emp;
+
+3) Tell me the difference between Delete, Drop, Truncate   
+
+4) tell me the difference between DDL and DML
+
+5) Tell me the query to find the max, min, third highest salary from the Employee table (after writing queries explain also)
+Ans - select max(salary)from employee;
+select min(salary)from employee;
+Select *from Employee order by salary desc limit 2,1;
+
+6) What are the types of JOIN (Ans Tell here - Inner join, Left Join, right Join, full join)
+
+7) What are the types of constraints - (Ans - Not Null, unique, default, check, Peimary Key, Foreign Key)
+
+8) What is Primary Key and Foreign Key
+Ans - Primary Key : - Combination of Not Null + unique
+
+Foreign Key - There are 2 Table 
+Parent table - having Primary Key
+Child Table - having Foreign Key
+Foreign Key in Child table takes the references in Primary Key of the Parent table
+
+9) What is the difference between Not Null & Unique Key    Ans - Not Null:- Null not allowed    Unique :- Null allowed. It accept unique values
+
+10) Tell me the query to find out the First row and Last row in the table
+Ans - Select *from emp limit 1; -- first row
+Select *from emp order by ID desc limit 1;  -- Last row
+
+11) What is View in SQL
+
+12) What is Aliases in SQL  Ans - temporary rename Column and table. We used As keyword to give alias name
+
+13) What is the difference between Where and Having Clause
+
+14) Tell me Join and Subqueries which is Faster - Ans Join
+
+15) Which DBMS we used. - Ans RDBMS - What it is called as Relational - ans - Row and column having relation
+
+16) Differenece beween SQL and MySQL
+
+17) What are the clauses in SQL  - Group by, having, order by , limit
+
+18) What are Different operator in SQL (Ans -which you remember you can tell)
+
+19) Tell me the query - Find the employee name which start at Letter A
+Ans - Select *from employee where name like 'A%';
+
+20) How to delete duplicate rows in the table
+
+21) Tell me the query to update salary by 10%
+Ans - UPDATE Employee SET Salary = Salary + (Salary * 10/100);
+
+22) tell me the query to find the current date and time
+Select CURRENT_DATE(); -- Return the current date
+Select CURRENT_TIME (); -- Return the current Time
+Select CURRENT_TIMESTAMP (); -- Return current Timestamp
+
+23) what are set operators in SQL - (Ans - Union, Union All)
+
+24) Tell me the query to find the top 5 rows in the table
+Ans - Select *from employee limit 5;
+
+25)Tell me the query to find the even and odd records from the table
+Ans - Select *from employee where ID % 2 = 0; -- EVEN
+Select *from employee where ID % 2 = 1; -- ODD
+
+
+
+
